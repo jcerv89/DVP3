@@ -8,18 +8,12 @@ namespace DVP1.CE1
     //Justin Cervenec
     //1811
     //Project & Portfolio 1
-    //Main method to call classes
+    //Displays user text input backwards, i.e. class = ssalc
 {
-    class Program
+    class Backwards
     {
-        static void Main(string[] args)
-        {
-            Menu.Choices();//Calls menu to display
 
-           
-            
 
-           
-        }
+
     }
 }
