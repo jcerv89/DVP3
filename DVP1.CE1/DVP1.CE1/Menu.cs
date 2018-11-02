@@ -15,7 +15,7 @@ namespace DVP1.CE1
         public static void Choices()
         {
             //Welcome user to program with intructions
-            Console.WriteLine("Coding chalenge menu:");
+            Console.WriteLine("Coding challenge menu:");
             Console.WriteLine("PLease select the program you want to run and press enter.");
             Console.WriteLine();//Space between outputs
 
@@ -38,6 +38,10 @@ namespace DVP1.CE1
             if (userChoiceString=="1")
             {
                 SwapName.Names();
+            }
+            else if (userChoiceString =="2")
+            {
+                Backwards.Reverse();
             }
         }
 }

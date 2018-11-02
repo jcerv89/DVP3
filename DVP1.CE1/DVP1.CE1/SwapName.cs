@@ -21,9 +21,9 @@ namespace DVP1.CE1
             string userFirstName = Console.ReadLine();
 
             //Display user input
-            Console.WriteLine("You entered " + userFirstName);
+            Console.WriteLine("You entered " + userFirstName+"as your fist name.");
 
-            //varify user input
+            //verify user input
             while (string.IsNullOrWhiteSpace(userFirstName))
             {
                 Console.WriteLine("Please enter your first name.");
@@ -37,7 +37,7 @@ namespace DVP1.CE1
             string userLastName = Console.ReadLine();
 
             //Display user text
-            Console.WriteLine("You entered "+userLastName);
+            Console.WriteLine("You entered "+userLastName+"as your last name.");
 
             //varify user input
             while (string.IsNullOrWhiteSpace(userLastName))
@@ -46,11 +46,15 @@ namespace DVP1.CE1
                 userLastName = Console.ReadLine();
             
             }
+
+       
             string name = userFirstName+" " + userLastName;//User full name enterd
             string reverseName = userLastName + " " + userFirstName;//User full name in reverse order
 
+            Console.WriteLine("Your name is "+name+", but in reverse order it is "+reverseName+".");
+
             //Displays user name and name in reverse. Will edit later to make more efficiant
-            Console.WriteLine("Your name is "+name +", but in reverse it is " + reverseName);
+           // Console.WriteLine("Your name is "+name +", but in reverse it is " + reverseName);
 
             /*Above only creates correct output. DO NOT KEEP FOR USE. Make custom function below with argurmants for names
               with a .reverse, or something like it to swap the name order.            
@@ -58,6 +62,6 @@ namespace DVP1.CE1
             
         }
 
-
+     
     }
 }
