@@ -14,8 +14,11 @@ namespace DVP1.CE1
     {
         static void Main(string[] args)
         {
-            Menu.Choices();//Calls menu to display
-
+            /*Calls the menu to run. From there, the user will can select which 
+              program they want to run.
+             */
+             Menu.Choices();
+           
            
             
 

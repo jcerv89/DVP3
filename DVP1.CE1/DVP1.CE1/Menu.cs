@@ -16,7 +16,7 @@ namespace DVP1.CE1
         {
             //Welcome user to program with intructions
             Console.WriteLine("Coding challenge menu:");
-            Console.WriteLine("PLease select the program you want to run and press enter.");
+            Console.WriteLine("Please select the program you want to run and press enter.");
             Console.WriteLine();//Space between outputs
 
             //Displays the menu choices
@@ -35,14 +35,20 @@ namespace DVP1.CE1
                 userChoiceString = Console.ReadLine();
             }
 
-            if (userChoiceString=="1")
+            while (true)
             {
-                SwapName.Names();
+                if (userChoiceString == "1")
+                {
+                    SwapName.Names();
+                }
+                else if (userChoiceString == "2")
+                {
+                    Backwards.Reverse();
+                }
+
+               
             }
-            else if (userChoiceString =="2")
-            {
-                Backwards.Reverse();
-            }
+
         }
 }
 }

@@ -21,7 +21,7 @@ namespace DVP1.CE1
             string userFirstName = Console.ReadLine();
 
             //Display user input
-            Console.WriteLine("You entered " + userFirstName+"as your fist name.");
+            Console.WriteLine("You entered " + userFirstName+" as your first name.");
 
             //verify user input
             while (string.IsNullOrWhiteSpace(userFirstName))
@@ -37,7 +37,7 @@ namespace DVP1.CE1
             string userLastName = Console.ReadLine();
 
             //Display user text
-            Console.WriteLine("You entered "+userLastName+"as your last name.");
+            Console.WriteLine("You entered "+userLastName+" as your last name.");
 
             //varify user input
             while (string.IsNullOrWhiteSpace(userLastName))

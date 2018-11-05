@@ -40,7 +40,7 @@ namespace DVP1.CE1
         {
             char[] cArray = name.ToCharArray();
             string reverse = String.Empty;
-            for (int i = cArray.Length - 1; i > -1; i--)//Loop to make string text apear backwards
+            for (int i = cArray.Length - 1; i > -1; i--)//Loop to make string text appear backwards
             {
                 reverse += cArray[i];
             }
