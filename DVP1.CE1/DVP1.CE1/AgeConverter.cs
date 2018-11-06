@@ -27,8 +27,8 @@ namespace DVP1.CE1
                 userNameString = Console.ReadLine();
             }
 
-            //Got to thank the user for their name. Now get their age.
-            Console.WriteLine("Thanks"+userNameString+", now tell us your age.");
+            //Have to thank the user for their name. Now get their age.
+            Console.WriteLine("Thanks "+userNameString+", now tell us your age.");
 
             //Get user age
             string userAgeString = Console.ReadLine();
@@ -41,6 +41,20 @@ namespace DVP1.CE1
                 Console.WriteLine("We simply need a number for your age, such as 21 or 55.");
                 userAgeString = Console.ReadLine();
             }
+            
+            //Congrats user on being old
+            Console.WriteLine("Good job surviving until the age of " + userAge+".");
+
+            //Some quick math to convert the user age to nonsense
+            int ageDays = userAge * 365;
+            //Age in hours
+            int ageHours = ageDays * 24;
+            //Age in minutes
+            int ageMinutes = ageHours * 60;
+            //Age in seconds
+            int ageSeconds = ageMinutes * 60;
+
+            Console.WriteLine("To make you feel really old, you are " +ageDays +" days old, "+ageHours+" hours old, " +ageMinutes+" minutes old and "+ageSeconds+" seconds old!");
         }
     }
 }

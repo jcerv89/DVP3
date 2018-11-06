@@ -35,8 +35,8 @@ namespace DVP1.CE1
                 userChoiceString = Console.ReadLine();
             }
 
-            while (true)
-            {
+            
+            
                 if (userChoiceString == "1")
                 {
                     SwapName.Names();
@@ -45,9 +45,12 @@ namespace DVP1.CE1
                 {
                     Backwards.Reverse();
                 }
-
+                else if (userChoiceString=="3")
+                {
+                    AgeConverter.AgeConvert();
+                }
                
-            }
+            
 
         }
 }
