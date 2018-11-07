@@ -49,7 +49,10 @@ namespace DVP1.CE1
                 {
                     AgeConverter.AgeConvert();
                 }
-               
+                else if (userChoiceString=="4")
+                {
+                    TempConverter.TempConvert();
+                }
             
 
         }
