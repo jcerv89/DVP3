@@ -23,7 +23,7 @@ namespace DVP1.CE1
             string userChoiceString = Console.ReadLine();
 
             //Verify user input
-            while (string.IsNullOrWhiteSpace(userChoiceString))
+            while (string.IsNullOrWhiteSpace(userChoiceString)||(userChoiceString!="1")&&(userChoiceString!="2"))
             {
                
                     Console.WriteLine("Please select a valid option.");
@@ -46,25 +46,28 @@ namespace DVP1.CE1
             if (userChoiceString=="1")//Fahrenheit to Celcius to user
             {
                 double celsTemp = FahrToCel(userTemp);
-                Console.WriteLine(Math.Round(celsTemp, 1));
+                Console.WriteLine(Math.Round(celsTemp, 1));//rounds to nearest tenth of a decimal
             }
             else if (userChoiceString=="2")
             {
-
+                double fahrTemp = CelToFahr(userTemp);
+                Console.WriteLine(Math.Round(fahrTemp));
             }
-            else
-            {
-                Console.WriteLine("Please enter one of the valid options");
-            }
+           
         }
 
 
         public static double FahrToCel(double temp)//Method for fahrenheit to celcius conversion
         {
-            double toCelcius = (temp - 32) * .5556;
+            double toCelcius = (temp - 32) * .5556;//Some quick mafffffs
             return toCelcius;
         }
 
+        public static double CelToFahr(double temp)//Method to convert cel to fahrenheit
+        {
+            double toFahr = (temp * 1.8) + 32;//More quick mafffs
+            return toFahr;
+        }
 
     }
 }
