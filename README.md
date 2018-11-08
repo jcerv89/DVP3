@@ -7,10 +7,12 @@ The GIT repo is used for version control, a place to back up and store work in t
 ### Updates to commits:
 10/30/2018 - Coding challenge has built menu with some custom classes designated. The swap name program is in progress. Many updates and commits to come in the neare future. Check the repo daily for changes and updates.
 
-###Additions to challenges:
+### Additions to challenges:
 The Backwards program functions properly. In the near future, a minimum for user words to be entered will be added as a requirement from user.
 
-The Age Converter program is currently being built. Also expect that to be available in the near future.
+The age converter is complete. It will give your age in days, hours, minutes and seconds.
+
+The temp converter also works for fahrenheit and celcius conversion. Expect a kelvin conversion in the near future. 
 
 
 
