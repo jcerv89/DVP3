@@ -46,12 +46,12 @@ namespace DVP1.CE1
             if (userChoiceString=="1")//Fahrenheit to Celcius to user
             {
                 double celsTemp = FahrToCel(userTemp);
-                Console.WriteLine(Math.Round(celsTemp, 1));//rounds to nearest tenth of a decimal
+                Console.WriteLine("The temperature is "+Math.Round(celsTemp, 1) +" degrees celcius.");//rounds to nearest tenth of a decimal
             }
             else if (userChoiceString=="2")
             {
                 double fahrTemp = CelToFahr(userTemp);
-                Console.WriteLine(Math.Round(fahrTemp));
+                Console.WriteLine("The temperature is "+Math.Round(fahrTemp)+" degrees fahrenheit.");
             }
            
         }
