@@ -19,95 +19,111 @@ namespace Cervenec_Justin_ResturantCalc
             */
 
 
-    
-           
+
+
 
             //This is a tool for for users to calculate a tip for a meal cost
-           
-            
-            
+
+
             //Prompt user for a total amount
-            Console.WriteLine("Please enter the amount for each check and press enter.");
+            Console.WriteLine("Please enter the amount for check one and press enter.");
 
             //user input for check amounts
             string check1String = Console.ReadLine();
-            string check2String = Console.ReadLine();
-            string check3String = Console.ReadLine();
-            //Variables for check amounts
-            decimal check1;
-            decimal check2;
-            decimal check3;
-            //verify that user input is some kind of money format
-            while (!decimal.TryParse(check1String, out check1)&&(!decimal.TryParse(check2String, out check2)&&(!decimal.TryParse(check3String, out check3))))
+            double check1;//varibale for check one from user
+            //verify user input is a dollar amount
+            while (!double.TryParse(check1String, out check1))
             {
-                Console.WriteLine("Please enter the check amounts. For example, 25.98.");
+                Console.WriteLine("Please enter a dollar value, such as 12.99.");
                 check1String = Console.ReadLine();
-                check2String = Console.ReadLine();
-                check3String = Console.ReadLine();
-
             }
-            ////converts input to number
-            //double checkOne = double.Parse(check1);
-            //double checkTwo = double.Parse(check2);
-            //double checkThree = double.Parse(check3);
+            Console.WriteLine("What is the amount for check 2?");
+            string check2String = Console.ReadLine(); double check2;//holds user input
+            while (!double.TryParse(check2String, out check2))
+            {
+                Console.WriteLine("Please enter a dollar value, such as 12.99.");
+                check2String = Console.ReadLine();
+            }
+            Console.WriteLine("What is the amount for check 3?");
+            string check3String = Console.ReadLine(); double check3;//holds third check amount
+            while (!double.TryParse(check3String, out check3))
+            {
+                Console.WriteLine("Please enter a dollar value, such as 12.99.");
+                check3String = Console.ReadLine();
+            }
+
 
             //User prompt for a tip
-            Console.WriteLine("If you were satisfied with your service and want to add a tip, type the percent amount and press enter");
+            Console.WriteLine("If you were satisfied with your service, what tip percent do you want to add to check 1? ");
 
-            string tip1 = Console.ReadLine();
-            string tip2 = Console.ReadLine();
-            string tip3 = Console.ReadLine();
-            //convert tip to number
-            double tipPercent1 = double.Parse(tip1);
-            double tipPercent2 = double.Parse(tip2);
-            double tipPercent3 = double.Parse(tip3);
+            string tip1String = Console.ReadLine(); double tip1;
+            while (!double.TryParse(tip1String, out tip1))
+            {
+                Console.WriteLine("Please enter the percent amount you want to leave, such as 15 or 20.");
+                tip1String = Console.ReadLine();
+            }
+            Console.WriteLine("What tip percent do you want to add for check 2?");
+            string tip2String = Console.ReadLine(); double tip2;
+            while (!double.TryParse(tip2String, out tip2))
+            {
+                Console.WriteLine("Please enter the percent amount you want to leave, such as 15 or 20.");
+                tip2String = Console.ReadLine();
+            }
+            Console.WriteLine("What tip percent do you want to add for check 3?");
+            string tip3String = Console.ReadLine(); double tip3;
+            while (!double.TryParse(tip3String, out tip3))
+            {
+                Console.WriteLine("Please enter the percent amount you want to leave, such as 15 or 20.");
+                tip3String = Console.ReadLine();
+            }
+
 
 
 
             //tip amount calculations
-            double tipAmount1 = (tipPercent1 * .01)*checkOne;
-            double tipAmount2 = (tipPercent2 * .01) * checkTwo;
-            double tipAmount3 = (tipPercent3 * .01) * checkThree;
+            double tipAmount1 = (tip1 * .01) * check1;
+            double tipAmount2 = (tip2 * .01) * check2;
+            double tipAmount3 = (tip3 * .01) * check3;
             //Displays tip amount only to user
-            Console.WriteLine("The tip amount for check one will be $"+tipAmount1);
-            Console.WriteLine("The tip amount for check two will be $"+tipAmount2);
-            Console.WriteLine("The tip amount for check three will be $"+tipAmount3);
+            Console.WriteLine("The tip amount for check one will be $" + tipAmount1);
+            Console.WriteLine("The tip amount for check two will be $" + tipAmount2);
+            Console.WriteLine("The tip amount for check three will be $" + tipAmount3);
 
             //This adds the tip amount to the original check amount
-            double totalAmount1 = tipAmount1 + checkOne;
-            double totalAmount2 = tipAmount2 + checkTwo;
-            double totalAmount3 = tipAmount3 + checkThree;
+            double totalAmount1 = tipAmount1 + check1;
+            double totalAmount2 = tipAmount2 + check2;
+            double totalAmount3 = tipAmount3 + check3;
             //convert data to decimal type
             decimal finalAmount1 = (decimal)totalAmount1;
             decimal finalAmount2 = (decimal)totalAmount2;
             decimal finalAmount3 = (decimal)totalAmount3;
 
             //total of three checks combined
-            double totalCombo = checkOne + checkTwo + checkThree;
+            double totalCombo = check1 + check2 + check3;
 
             //total of the three tips entered
             double totalTip = tipAmount1 + tipAmount2 + tipAmount3;
-        
+
 
             //output total cost to user
-            Console.WriteLine("The total cost for check one will be $"+finalAmount1);
-            Console.WriteLine("The total cost for check two will be $"+finalAmount2);
-            Console.WriteLine("The total cost for check three will be $"+finalAmount3);
+            Console.WriteLine("The total cost for check one will be $" + finalAmount1);
+            Console.WriteLine("The total cost for check two will be $" + finalAmount2);
+            Console.WriteLine("The total cost for check three will be $" + finalAmount3);
 
             //Combined total of all three tips
-            Console.WriteLine("The total combined tip amount is $"+totalTip);
+            Console.WriteLine("The total combined tip amount is $" + totalTip);
 
 
-        //This is the final amount if the check split evenly
+            //This is the final amount if the check split evenly
             double splitCheck = (totalCombo + totalTip) / 3;
-            
-           
+
+
 
             //Combined final total including tips
             Console.WriteLine("The combined costs including tips is $" + (totalTip + totalCombo));
 
             //Out put split cost to user
-            Console.WriteLine("If you split the amount evenly, each indidvidual cost would be $" + splitCheck);
+            Console.WriteLine("If you split the amount evenly, each indidvidual cost would be $" + Math.Round(splitCheck, 2));
 
             /*Test values to ensure corrct algorithms
              TEST 1
@@ -140,16 +156,7 @@ namespace Cervenec_Justin_ResturantCalc
              Total Tip For The Waiter – $14.1875 or $14.19 Rounded
              Grand total With Tips – $86.9375 or $86.94 Rounded
              3 way split cost – $28.9791666 or $28.98 Rounded
-       
-           
-
-            
-
-
-
-                
-
-*/
+       */
 
 
 
