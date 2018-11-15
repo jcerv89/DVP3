@@ -14,11 +14,11 @@ namespace Cervenec_Justin_Lists
         static void Main(string[] args)
         {
             //Initial Item list
-            List<string> itemsString = new List<string>()
+            List<string> itemsString = new List<string>()//sent down custom function named CombineTheLists
             {
-                "Guitar",
+                "Ibanez",
                 "Strings",
-                "Pack of Picks",
+                "Guitar Picks",
                 "Tuner",
                 "Cable",
                 "Guitar Case",
@@ -40,11 +40,11 @@ namespace Cervenec_Justin_Lists
 
             };
             // Call the CombineTheList Method
-            CombineTheLists(itemsString, itemsCost);
+            CombineTheLists(itemsString, itemsCost);//Will display the matching item with price from loop, using correct index numbers
             Console.WriteLine("\r\nWe are going to change the list a little bit now.\r\n");//Output will have matching idex nums with item to price
 
-           //2 items removed
-            itemsString.Remove("Guitar");
+           //2 items removed from original list above
+            itemsString.Remove("Ibanez");
             itemsString.Remove("Strings");
 
             
