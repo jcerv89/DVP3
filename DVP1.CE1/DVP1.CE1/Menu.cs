@@ -28,7 +28,7 @@ namespace DVP1.CE1
             //Variable to store user number input
             int userChoice;
 
-            //Loop to varify user input
+            //Loop to verify user input
             while (!int.TryParse(userChoiceString, out userChoice) || (userChoice > 5) || (string.IsNullOrWhiteSpace(userChoiceString)))
             {
                 Console.WriteLine("Please enter a valid option");
@@ -36,7 +36,7 @@ namespace DVP1.CE1
             }
 
             
-            
+                //The set of conditionals call the program to run that the user selects
                 if (userChoiceString == "1")
                 {
                     SwapName.Names();
@@ -57,6 +57,10 @@ namespace DVP1.CE1
                 {
                     BigBlueFish.BigFish();
                 }
+                else if (userChoiceString=="0")
+            {
+                Environment.Exit(0);//will close application if user selects option to do so
+            }
             
 
         }

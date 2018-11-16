@@ -17,6 +17,7 @@ namespace DVP1.CE1
             /*Calls the menu to run. From there, the user will can select which 
               program they want to run.
              */
+           
              Menu.Choices();
            
            

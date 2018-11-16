@@ -53,19 +53,24 @@ namespace DVP1.CE1
                 double fahrTemp = CelToFahr(userTemp);
                 Console.WriteLine("The temperature is "+Math.Round(fahrTemp)+" degrees fahrenheit.");
             }
+            Console.WriteLine("Press any key to return to main menu.");
+            Console.ReadKey();//Gives user a chance to press a key to go back to menu
+            Menu.Choices();//calls main menu back to user
+            
+            Console.WriteLine();//seperates key input that sends user back to main menu
            
         }
 
 
         public static double FahrToCel(double temp)//Method for fahrenheit to celcius conversion
         {
-            double toCelcius = (temp - 32) * .5556;//Some quick mafffffs
+            double toCelcius = (temp - 32) * .5556;//Some quick math
             return toCelcius;
         }
 
         public static double CelToFahr(double temp)//Method to convert cel to fahrenheit
         {
-            double toFahr = (temp * 1.8) + 32;//More quick mafffs
+            double toFahr = (temp * 1.8) + 32;//More quick math
             return toFahr;
         }
 

@@ -45,8 +45,24 @@ namespace DVP1.CE1
             //Congrats user on being old
             Console.WriteLine("Good job surviving until the age of " + userAge+".");
 
-            //Some quick math to convert the user age to nonsense
-            int ageDays = userAge * 365;
+          
+            Age(userAge);
+
+
+
+            Console.WriteLine("Press any key to return to main menu.");
+            Console.ReadKey();//Gives user a chance to press a key to go back to menu
+            Menu.Choices();//calls main menu back to user
+
+            Console.WriteLine();//seperates key input that sends user back to main menu
+
+        }
+
+        public static void Age(int age)//Method to convert user age to other age types
+        {
+          
+            //Some quick math to convert the user age to nonsense ages
+            int ageDays = age * 365;
             //Age in hours
             int ageHours = ageDays * 24;
             //Age in minutes
@@ -54,7 +70,14 @@ namespace DVP1.CE1
             //Age in seconds
             int ageSeconds = ageMinutes * 60;
 
-            Console.WriteLine("To make you feel really old, you are " +ageDays +" days old, "+ageHours+" hours old, " +ageMinutes+" minutes old and "+ageSeconds+" seconds old!");
+            //The .ToString(##,#) puts commas in the appropriate places of the numbers to read easier
+            Console.WriteLine("To make you feel really old, you are " + ageDays.ToString("##,#") + " days old, " + ageHours.ToString("##,#") + " hours old, " + ageMinutes.ToString("##,#") + " minutes old and " + ageSeconds.ToString("##,#") + " seconds old!");
+
+
+
         }
+        
+      
+
     }
 }

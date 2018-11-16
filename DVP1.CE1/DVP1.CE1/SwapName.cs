@@ -47,21 +47,25 @@ namespace DVP1.CE1
             
             }
 
-       
-            string name = userFirstName+" " + userLastName;//User full name enterd
-            string reverseName = userLastName + " " + userFirstName;//User full name in reverse order
+            Name(userFirstName, userLastName);//Calls custom method for the name of user
+     
 
-            Console.WriteLine("Your name is "+name+", but in reverse order it is "+reverseName+".");
+            Console.WriteLine("Press any key to return to main menu.");
+            Console.ReadKey();//Gives user a chance to press a key to go back to menu
+            Menu.Choices();//calls main menu back to user
 
-            //Displays user name and name in reverse. Will edit later to make more efficiant
-           // Console.WriteLine("Your name is "+name +", but in reverse it is " + reverseName);
+            Console.WriteLine();//seperates key input that sends user back to main menu
 
-            /*Above only creates correct output. DO NOT KEEP FOR USE. Make custom function below with argurmants for names
-              with a .reverse, or something like it to swap the name order.            
-            */
-            
+           
+
         }
+        public static void Name(string first, string last)//Method to take names from the user and output them in reverse order
+        {
+            Console.WriteLine("Your name is " +first + " " + last+", but...");//Normal name
 
+            
+            Console.WriteLine("Reversed your name is "+last+" " + first+"!");//Flipped name
+        }
      
     }
 }
