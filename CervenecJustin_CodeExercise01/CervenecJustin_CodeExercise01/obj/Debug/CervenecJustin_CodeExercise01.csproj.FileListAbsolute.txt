@@ -1,0 +1,11 @@
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\bin\Debug\CervenecJustin_CodeExercise01.exe.config
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\bin\Debug\CervenecJustin_CodeExercise01.exe
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\bin\Debug\CervenecJustin_CodeExercise01.pdb
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.inputForm.resources
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.exe
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.pdb
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise01\CervenecJustin_CodeExercise01\obj\Debug\CervenecJustin_CodeExercise01.MovieListForm.resources
