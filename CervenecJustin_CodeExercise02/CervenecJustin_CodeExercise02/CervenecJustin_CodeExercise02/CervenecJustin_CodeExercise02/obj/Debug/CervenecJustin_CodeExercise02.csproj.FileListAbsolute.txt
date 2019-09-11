@@ -1,0 +1,12 @@
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\bin\Debug\CervenecJustin_CodeExercise02.exe.config
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\bin\Debug\CervenecJustin_CodeExercise02.exe
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\bin\Debug\CervenecJustin_CodeExercise02.pdb
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\bin\Debug\MySql.Data.dll
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\bin\Debug\System.Data.SqlClient.dll
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\obj\Debug\CervenecJustin_CodeExercise02.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\obj\Debug\CervenecJustin_CodeExercise02.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\obj\Debug\CervenecJustin_CodeExercise02.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\obj\Debug\CervenecJustin_CodeExercise02.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\obj\Debug\CervenecJustin_CodeExercise02.exe
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\obj\Debug\CervenecJustin_CodeExercise02.pdb
+\\vmware-host\Shared Folders\Desktop\DVP3\CervenecJustin_CodeExercise02\CervenecJustin_CodeExercise02\obj\Debug\CervenecJustin_CodeExercise02.Form1.resources
