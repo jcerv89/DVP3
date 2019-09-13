@@ -45,7 +45,7 @@ namespace CervenecJustin_CodeExercise02
                 conn.Open();
 
                 //Debug Connection
-                 MessageBox.Show("Connected");
+                // MessageBox.Show("Connected");
             }
             catch (MySqlException e)
             {

@@ -22,7 +22,7 @@ namespace CervenecJustin_CodeExercise02
 
         public override string ToString()
         {
-            return $"{firstName} {lastName}";
+            return $"{firstName} {lastName}, Phone# - {phoneNumber}, Email - {email}, Relation - {relation}";
         }
     }
 }
